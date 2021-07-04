@@ -1,0 +1,170 @@
+body {
+  height: 100vh;
+  background: #071e3d;
+  position: relative;
+}
+
+header {
+  background-color: #fdfdfd;
+  width: 100%;
+  position: absolute;
+  min-height: 10vh;
+}
+
+header h1 {
+  cursor: wait;
+  color: black;
+}
+
+header a {
+  display: block !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+header li {
+  padding: 0px 10px;
+}
+
+header a {
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+header li:hover a {
+  color: black;
+  border: 2px solid #d72323;
+  border-radius: 50px;
+}
+
+header span {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: #fdfdfd;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+  }
+  header #hamburger {
+    color: black;
+  }
+  header h1 {
+    width: 100%;
+  }
+  header a {
+    color: black;
+  }
+  header .sidebar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    background-color: #fdfdfd;
+    width: 100%;
+    top: 10vh;
+    right: -100%;
+    color: black;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  header li:hover a {
+    color: black;
+    border: 2px solid #d72323;
+  }
+  header span {
+    display: block;
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: black;
+  }
+  header span .toggle {
+    right: 0%;
+  }
+}
+
+section#sec-1 {
+  min-height: 100vh;
+  width: 100%;
+}
+
+section#sec-1 h1 {
+  font-size: 4rem;
+  color: #fdfdfd;
+}
+
+section#sec-1 a {
+  font-size: 3rem;
+  color: #f5eded;
+  border-bottom: #c31432 1px dotted;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section#sec-1 a:hover {
+  border-bottom: 5px solid #c31432;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#240b36), to(#c31432));
+  background: linear-gradient(to right, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  padding-top: 40.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 30%;
+}
+/*# sourceMappingURL=style.css.map */
